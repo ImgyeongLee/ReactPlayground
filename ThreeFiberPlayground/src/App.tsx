@@ -14,7 +14,7 @@ function App() {
       <div className=" bg-slate-500 h-screen flex flex-col justify-center items-center">
         <div className="text-white text-xl">I am... {name}</div>
         <div className="bg-slate-800 w-full">
-          <Canvas camera={{ position: [0, 0, 13], fov: 50 }}>
+          <Canvas camera={{ position: [0, 0, 13], fov: 50 }} className="cursor-pointer">
             <React.Suspense fallback={<></>}>
               <ThreeText setName={setName} />
             </React.Suspense>
